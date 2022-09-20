@@ -1,7 +1,9 @@
 // move_semantics1.rs
 // Execute `rustlings hint move_semantics1` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+// I AM NOT DONE 
+
+// test
 
 fn main() {
     let vec0 = Vec::new();
