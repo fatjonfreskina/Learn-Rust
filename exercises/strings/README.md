@@ -8,7 +8,7 @@ to identify and create them, as well as use them.
 
 - [Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
 
-### Notes 
+### Notes
 
 Many of the same operations available with Vec<T> are available with String as well, because String is actually implemented as a wrapper around a vector of bytes with some extra guarantees, restrictions, and capabilities.
 
