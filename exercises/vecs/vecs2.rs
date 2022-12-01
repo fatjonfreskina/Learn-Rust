@@ -18,9 +18,14 @@ fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
 }
 
 fn vec_map(v: &Vec<i32>) -> Vec<i32> {
-    v.iter().map(|num| {
+    v
+    .iter()
+    .map(|num|{
         // This helped: 
         // https://www.newline.co/@kkostov/the-rust-map-function-a-gateway-to-iterators--f991b22b
+        num * 1
+    }).map(|num|{
+        //you can nest iterations!
         num * 2
     }).collect()
 }

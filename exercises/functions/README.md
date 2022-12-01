@@ -17,7 +17,7 @@ in more complex code.
 
 ## STATEMENTS AND EXPRESSIONS
 
-- Statements are instructions that perform some action and do not return a value, therefore, you can’t assign a let statement to another variable. This is different from what happens in other languages, such as C and Ruby, where the assignment returns the value of the assignment. In those languages, you can write x = y = 6 
+- Statements are instructions that perform some action and do not return a value, therefore, you can’t assign a let statement to another variable. This is different from what happens in other languages, such as C and Ruby, where the assignment returns the value of the assignment. In those languages, you can write x = y = 6
   - Creating a variable and assigning a value to it with the let keyword is a statement.
   - Function definitions are also statements
 
@@ -26,13 +26,14 @@ let y = 6;
 ```
 
 - Expressions evaluate to a resulting value.
-  - Calling a function is an expression. 
-  - Calling a macro is an expression. 
+  - Calling a function is an expression.
+  - Calling a macro is an expression.
   - A new scope block created with curly brackets is an expression
 
-## Functions with Return Values
+##  Functions with Return Values
 
 Functions can return values to the code that calls them. We don’t name return values, but we must declare their type after an arrow (->). In Rust, the return value of the function is synonymous with the value of the final expression in the block of the body of a function. You can return early from a function by using the return keyword and specifying a value, but most functions return the last expression implicitly. Here’s an example of a function that returns a value:
+
 ```rust
 fn five() -> i32 {
     5
