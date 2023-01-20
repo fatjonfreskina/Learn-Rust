@@ -2,8 +2,6 @@
 // Execute `rustlings hint strings3` or use the `hint` watch subcommand for a hint.
 
 fn trim_me(input: &str) -> String {
-    //let test = input.to_string();
-    //let mut test = *input
     input.trim().to_string()
 }
 

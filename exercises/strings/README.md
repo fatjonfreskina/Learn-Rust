@@ -1,6 +1,6 @@
 # Strings
 
-Rust has two string types, a string slice (`&str`) and an owned string (`String`).
+Rust has two string types, a string slice (string literal) (`&str`) and an owned string (`String`).
 We're not going to dictate when you should use which one, but we'll show you how
 to identify and create them, as well as use them.
 
@@ -15,7 +15,7 @@ Many of the same operations available with Vec<T> are available with String as w
 ```rust
 let mut s = String::new();      // heap allocated String
 let data = "initial contents";  // string literal
-let s1 = data.to_string();       // conversion from lit to String
+let mut s1 = data.to_string();       // conversion from lit to String
 let s2 = String::from("initial contents"); // heap allocated string from literal
 
 // Update of string
