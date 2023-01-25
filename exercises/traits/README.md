@@ -7,6 +7,7 @@ Data types can implement traits. To do so, the methods making up the trait are d
 In this way, traits are somewhat similar to Java interfaces and C++ abstract classes.
 
 Some additional common Rust traits include:
+
 - `Clone` (the `clone` method)
 - `Display` (which allows formatted display via `{}`)
 - `Debug` (which allows formatted display via `{:?}`)
