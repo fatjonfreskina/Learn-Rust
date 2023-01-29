@@ -4,11 +4,13 @@
 //
 // Execute `rustlings hint lifetimes3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
-struct Book {
-    author: &str,
-    title: &str,
+/*
+We can define structs to hold references, but in that case we would need to 
+add a lifetime annotation on every reference in the struct’s definition.
+*/
+struct Book<'a> {
+    author: &'a str,
+    title: &'a str,
 }
 
 fn main() {
