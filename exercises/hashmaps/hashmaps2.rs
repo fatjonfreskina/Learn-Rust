@@ -33,6 +33,12 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
 
     let mut counter = 1;
     for fruit in fruit_kinds {
+        /*
+        This method retrieves the entry key in the HashMap and returns a 
+        OccupiedEntry if the key is already in the HashMap, or an VacantEntry 
+        if the key is not. If the key is not in the HashMap, you can insert 
+        the value using the or_insert method.
+        */
         basket.entry(fruit).or_insert(counter);
         counter += 1;
     }
